@@ -1,0 +1,12 @@
+[
+  {
+    "term": "example term",
+    "type": "phrase",
+    "definition": "definition of phrase"
+  },
+  {
+    "term": "more",
+    "type": "adjective",
+    "definition": "add some more"
+  }
+]

@@ -1,0 +1,30 @@
+# Node / Vite
+node_modules/
+dist/
+.env
+.env.*
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+pnpm-debug.log*
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Android / Bubblewrap / Android Studio
+*.keystore
+*.jks
+/local.properties
+/.idea
+/.gradle
+/build
+**/build/
+
+# APKs / AABs
+*.apk
+*.aab
+
+# Service workers
+sw.js

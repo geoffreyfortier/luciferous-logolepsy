@@ -1,0 +1,12 @@
+# Serve existing files normally
+RewriteCond %{REQUEST_FILENAME} -f
+RewriteRule ^ - [L]
+
+# Fallback to index.html for SPA routing
+RewriteRule ^ index.html [L]
+
+# Correct MIME types (if your server doesn't set them automatically)
+AddType application/javascript .js
+AddType text/css .css
+AddType application/json .json
+AddType image/x-icon .ico

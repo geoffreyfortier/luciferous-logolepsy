@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Luciferous Logolepsy</title>
+
+    <!-- Favicon for desktop browsers -->
+    <link rel="icon" href="./favicon.svg" type="image/svg+xml">
+
+    <!-- PNG fallback for browsers that don’t support SVG favicons -->
+    <link rel="icon" type="image/png" sizes="32x32" href="./ll-192x192.png">
+
+    <!-- iOS / iPadOS Home Screen -->
+    <link rel="apple-touch-icon" href="./ll-192x192.png">
+    <meta name="apple-mobile-web-app-title" content="Luciferous Logolepsy">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+    <!-- Android PWA / general mobile -->
+    <meta name="theme-color" content="#4db6ac">
+
+    <!-- PWA Meta -->
+    <link rel="manifest" href="./manifest.webmanifest" />
+
+    <!-- Vite -->
+    <script type="module" src="/src/main.ts"></script>
+  </head>
+
+  <body>
+    <!-- App Header -->
+    <header class="app-header">
+      <h1 id="appTitle" class="app-title">Luciferous Logolepsy</h1>
+
+      <div class="utility-bar">
+        <button id="darkModeToggle" aria-label="Toggle dark mode">🌙</button>
+        <button id="randomTermBtn" aria-label="Show random term">🎲</button>
+        <button id="recentTermsBtn" title="Show recent terms">🕒</button>
+        <button id="favoritesBtn" title="View your favorites">⭐</button>
+        <button id="azToggle" aria-label="Browse alphabetically">🔤</button>
+      </div>
+
+      <div class="search-bar">
+        <input id="search" type="search" placeholder="Search glossary..." autocomplete="off" />
+
+        <div class="filters">
+          <select id="typeFilter">
+            <option value="">All types</option>
+            <option value="noun">Noun</option>
+            <option value="verb">Verb</option>
+            <option value="adjective">Adjective</option>
+            <option value="phrase">Phrase</option>
+          </select>
+
+          <select id="pageSize">
+            <option value="10">10</option>
+            <option value="25">25</option>
+            <option value="50">50</option>
+          </select>
+        </div>
+      </div>
+    </header>
+
+    <!-- A–Z Drawer -->
+    <aside id="azDrawer" class="az-drawer">
+      <div class="az-inner"></div>
+    </aside>
+
+    <!-- Pagination (Top) -->
+    <nav class="pagination">
+      <button id="prevPage">← Prev</button>
+      <span id="pageInfo"></span>
+      <button id="nextPage">Next →</button>
+    </nav>
+
+    <!-- Results -->
+    <main id="results"></main>
+
+    <!-- Pagination (Bottom) -->
+    <nav class="pagination">
+      <button id="prevPageBottom">← Prev</button>
+      <span id="pageInfoBottom"></span>
+      <button id="nextPageBottom">Next →</button>
+    </nav>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <span id="status">Online</span>
+      <span id="termCount">0 terms</span>
+      <span>Created by <a href="https://arcane.org" target="_blank" rel="noopener noreferrer">Cafe Arcane</a>
+      </span>
+      <!-- New About link -->
+      <span>
+        <a href="#" id="aboutLink">About</a>
+      </span>
+    </footer>
+
+    <!-- About Modal -->
+    <div id="aboutModal" class="modal">
+      <div class="modal-content">
+        <span id="closeAbout" class="close">&times;</span>
+        <h2>About Luciferous Logolepsy</h2>
+        <p>
+        Years ago there was a site packed with all sorts of wonderful archaic words. It was both a pleasure to explore and inspiration to reference. Sadly, the domain seems to have expired and is now squatted by a California Hotels page. I've reproduced what I can of the site's old content here and hope you enjoy it as much as I did.
+        <br /><br />
+        "Welcome to Luciferous Logolepsy, a collection of over 9,000 obscure English words. Though the definition of an English word might seem to be straightforward, it is not. There exist so many adopted, derivative, archaic or abandoned words in what we loosely define as the English Language, that a clear-cut definition seems impossible.
+        <br /><br />
+        For the purposes of this project though, words are included that may stretch any basic definitions. Particular attention has been paid to archaic words, as they tend to be more evocative as if their very age lends additional meaning or overtones."
+        </p>
+      </div>
+    </div>
+
+    <!-- Recent terms drawer/modal -->
+    <div id="recentTermsDrawer" class="drawer">
+      <div class="drawer-inner"></div>
+    </div>
+
+    <button id="scrollTopBtn" class="scroll-top-btn" title="Scroll to top">⬆️</button>
+
+  </body>
+</html>
