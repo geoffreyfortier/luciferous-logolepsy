@@ -2,7 +2,7 @@
 
 Luciferous Logolepsy is a curated glossary of over 9,000 obscure, archaic, and evocative English words, rebuilt as a modern web app and installable mobile application.
 
-It is designed for writers, linguists, word-lovers, and the linguistically curious.
+It is designed for writers, word-lovers, and the linguistically curious.
 
 ## About the Project
 
