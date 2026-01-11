@@ -17,7 +17,7 @@ Luciferous Logolepsy is an effort to preserve and revive as much of that content
 🔤 A-Z browsing\
 ⭐ Favorites; save and revisit words you love\
 🎲 Random term discovery\
-🕒 Recently viewed terms\
+🎯 Guess the term's meaning\
 🌙 Light/Dark mode\
 📱 Installable PWA with offline support\
 🚫 No ads, no tracking, no accounts
